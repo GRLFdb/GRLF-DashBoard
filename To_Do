@@ -3,9 +3,16 @@ To Do File
   
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+[NEEDS WORK]
 Reading .CSV files
   Main functionality of the dashboard. This would allow us to get the data the sensors have recorded and correctly apply it to the areas its needed. 
-  There are a couple of different solutions out there by different people. For instance, we can import two libraries - Ajax, to retrieve the data from a URL and Papa Parse, to parse the file (Based on https://stackoverflow.com/questions/36104089/read-csv-file-from-a-location-and-display-as-html-table). Other solutions state that we can use Jquery and Papa Parse to read .CSV files (https://www.js-tutorials.com/javascript-tutorial/reading-csv-file-using-javascript-html5/), however this may just be local .CSV's only. There are solutions for taking .CSV data and putting it into a HTML Table, which would be great for the leaderboard (https://stackoverflow.com/questions/36104089/read-csv-file-from-a-location-and-display-as-html-table) Anyways, implementation of this feature will probably be started after 11/8/2018 to give us time to prepare for the test Dr. Moorman will give us.
+  There are a couple of different solutions out there by different people. For instance, we can import two libraries - Ajax, to retrieve
+the data from a URL and Papa Parse, to parse the file (Based on https://stackoverflow.com/questions/36104089/read-csv-file-from-a-
+location-and-display-as-html-table). Other solutions state that we can use Jquery and Papa Parse to read .CSV files (https://www.js-
+tutorials.com/javascript-tutorial/reading-csv-file-using-javascript-html5/), however this may just be local .CSV's only. There are 
+solutions for taking .CSV data and putting it into a HTML Table, which would be great for the leaderboard 
+(https://stackoverflow.com/questions/36104089/read-csv-file-from-a-location-and-display-as-html-table) Anyways, implementation of this 
+feature will probably be started after 11/8/2018 to give us time to prepare for the test Dr. Moorman will give us.
   
   Whos Working on it:
   Version:
