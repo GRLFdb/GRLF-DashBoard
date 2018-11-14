@@ -1,11 +1,13 @@
 To Do File
-  Please put issue, breif description of what it is and what can be done to solve it. In addition, include who is working on the issue, the version (if finished and updated), any bugs, ext. The more information that is given, the better we can fix it.
+  Please put issue, breif description of what it is and what can be done to solve it. In addition, include who is working on the issue, 
+  the version (if finished and updated), any bugs, ext. The more information that is given, the better we can fix it.
   
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 [NEEDS WORK]
 Reading .CSV files
-  Main functionality of the dashboard. This would allow us to get the data the sensors have recorded and correctly apply it to the areas its needed. 
+  Main functionality of the dashboard. This would allow us to get the data the sensors have recorded and correctly apply it to the areas 
+  its needed. 
   There are a couple of different solutions out there by different people. For instance, we can import two libraries - Ajax, to retrieve
 the data from a URL and Papa Parse, to parse the file (Based on https://stackoverflow.com/questions/36104089/read-csv-file-from-a-
 location-and-display-as-html-table). Other solutions state that we can use Jquery and Papa Parse to read .CSV files (https://www.js-
@@ -20,4 +22,15 @@ feature will probably be started after 11/8/2018 to give us time to prepare for 
   
   Addtional resources: https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
   
+  
+[NEEDS WORK]
+Time between page transitions
+  Send user back to home page after a variable of time of inactivity. This may help, 
+  https://stackoverflow.com/questions/18933196/how-can-i-switch-web-pages-of-the-website-automatically-which-i-have-created
+
+  Whos Working on it:
+  Version:
+  Bugs: N/A
+
+
 Something Else.
