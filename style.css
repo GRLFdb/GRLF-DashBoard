@@ -1,0 +1,245 @@
+/*Global body styling */
+body * {
+  font-family: "Segoe UI";
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+	text-indent: 2em;
+}
+
+.main-page {
+  background-image: linear-gradient(90deg, #141E30, #1f3247);
+  transition: 0.5s;
+}
+
+.Detail-page {
+  background-image: linear-gradient(90deg, #141E30, #1f3247);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%; /* Failed attempts to make the background fill the whole page */
+}
+
+.heading-bar {
+  width: 100%;
+}
+
+#top-half {
+  text-align: center;
+}
+
+#top-left {
+  display: inline-block;
+}
+
+#top-right {
+  display: inline-block;
+}
+
+#top-center {
+  display: inline-block;
+}
+
+#headingBar {
+  text-align: center;
+  padding: 8px 0px;
+}
+
+#dormStuff {
+	text-indent: 10px;
+	margin: 10px
+}
+
+.heading {
+  color: #cff;
+  padding: 12px;
+  text-decoration: underline;
+}
+
+.menuButton {
+  display: inline;
+  transition: 0.3s;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.imageSlides {
+  width: 600px;
+  height: 305px;
+  padding: 7px 0px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #26375a;
+  position: relative;
+  text-align: center;
+  color: #cff;
+}
+
+.imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4px 5px;
+    background-color: black;
+    border-radius: 10%;
+    font-size: 30px;
+}
+
+.leaderTable {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #26375a;
+}
+
+/* set all canvases with class doughChart to 48% of the parent width. In this case, body */
+.doughChart {
+  width: 600px;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #26375a;
+}
+
+/* Line graph styles */
+.lineGraph {
+  height: 50%;
+  padding: 7px;
+  margin: 10px 10px 5px 10px;
+  border-radius: 20px;
+  background-color: #26375a;
+}
+
+/* Side menu div */
+.sideMenu {
+  width: 0px; /* changes with JavaScript */
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, #141E30, #1f3247); /* Change this based on Tranys guidelines */
+  border-right: solid 0px;
+  overflow-x: hidden;
+  padding-top: 20px; /*Was formally 60px */
+  transition: 0.5s; /* 0.5 second transition effect for slide */
+}
+
+/* Menu links */
+.sideMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #cff;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideMenu a:hover {
+  color: #000;
+  text-decoration: inherit;
+}
+
+/* Position and style close button */
+.sideMenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Change font of menu title */
+.menuTitle {
+  padding: 8px 8px 8px 32px;
+
+  font-size: 35px;
+  color: #cff;
+  display: block;
+  font-weight: bold;
+  background-color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.subTitle {
+  padding: 8px 8px 8px 32px;
+  text-decoration: underline;;
+  font-size: 25px;
+  color: #cff;
+  display: block;
+  font-weight: bold;
+  background-color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Style "menu" button */
+.menuButton {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #cff;
+  cursor: pointer;
+  width: 30px;
+}
+
+.menuButton:hover {
+  color: black;
+}
+
+footer {
+  color: #80ffff;
+  padding: 0px 10px 5px 10px;
+  text-align: right;
+}
+
+th, td { /* affects the individual rows in header and body */
+  font-size: 18px;
+  font-weight: 400;
+  color: #cff;
+  padding: 20px;
+  width: 33.3333%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+table { /* affects the entire table */
+  font-family: 'Segoe UI';
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+thead th { /* affects the rows in the header */
+  background: #88CCF1;
+  color: rgb(128, 255, 191);
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+tr { /* affects the rows in the body */
+  background: #f4f7f8;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  height: 59px;
+}
+
+tfoot *{
+  text-decoration: underline;
+}

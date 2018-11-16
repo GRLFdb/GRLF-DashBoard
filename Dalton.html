@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dalton-Voigt</title>
+	<!-- from chart.js cdn; chose the bundle -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+	<!--Load own style sheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Free Bootstrap stylesheet-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="Body" class="Detail-page">
+		<!--Side menu-->
+	    <div id="mySideMenu" class="sideMenu">
+			<span class="menuTitle">Menu</span> <!-- Menu Title -->
+			<a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
+			<a href="#" onclick="window.location.href='index.html'"> Home</a> <!-- Takes you back to the home page -->
+			<span class="subTitle">Data</span> <!-- Menu Title -->
+			<a href="#" onclick="dataToBasset()">Data Values 1</a> <!-- Temporary basset button, switching data to basset data -->
+			<a href="#" onclick="dataToPioneer()"></option>Data Values 2</a> <!-- Temporary pioneer button, switching data to basset data -->
+			<span class="subTitle">More Detail</span> <!-- Menu Title -->
+			<a href="#" onclick="window.location.href='Basset.html'"> Basset</a> <!-- Takes you to another page -->
+			<a href="#" onclick="window.location.href='Pioneer.html'"> Pioneer</a> <!-- Takes you to another page -->
+
+		</div>
+
+	    <!--Menu Button-->
+		<div id="headingBar" class="heading-bar">
+		  <div class="heading">
+			<h1>GRLF Dashboard</h1>
+		  </div>
+		  <div class="menuButton">
+			<span onclick="openMenu()">&#9776</span>
+		  </div>
+		</div>      
+
+		<div id="top-half">	
+
+			<!--doughnut graph -->
+			<div id="top-left">
+				<canvas id="doughnutCanvas" class="doughChart"></canvas>
+				<h3>Like how nothing works.</h3>
+			</div>
+		</div>
+
+		<p></p>
+
+		<div id="dormStuff">
+			<font color="white"><h2>Dalton-Voigt</h2></font>
+			<font color="white"><p>Some kinda of data that can be shown, blah blah blah. Oh, maybe show the building's current rank and useage in relation to all the water and power used</p></font>
+			<font color="white"><p> Lorem ipsum dolor sit amet, illum possim accusata ei vel. Te pro albucius iudicabit dissentias. Saperet suscipit sadipscing ea quo, ius eripuit pertinacia id, probo ignota instructior ne sit. Paulo ceteros deserunt est ex.
+									Id eum consul qualisque, in vel novum everti. Mea delicata suscipiantur ut. Id ius electram maiestatis deseruisse. Has atqui constituam sadipscing ne. Ea justo etiam philosophia ius.
+									Usu alia iriure vulputate at, vidit utinam labitur no vix, integre consectetuer at eos. Qui oblique convenire assueverit ea, vim ex vocibus vivendo, choro facilisis duo in. Ne est prodesset mnesarchum. Pro ea mutat ponderum rationibus, ad laboramus liberavisse qui. Legimus voluptaria has ad, mel ea facilisis ullamcorper.
+									Nihil scaevola eam at, mei eu sale labores, et falli audire vel. Pri ne regione incorrupte suscipiantur. Mea et reque aperiam. Ea vim exerci cetero, an posse doctus docendi nec, no eum exerci commodo lobortis. Ex quo partem eripuit. Ius stet atqui dolorem cu.
+									Ei pro vidisse menandri, duo no detracto electram suscipiantur, sit ne neglegentur signiferumque. Nostrum lobortis et ius, nihil saperet accusam nam no, malis qualisque ius ei. Per prompta debitis ex, possit audire efficiendi sit ad, te pro suscipit contentiones signiferumque. Et impedit mandamus sadipscing quo, usu no verear pericula reformidans, mazim tempor fierent eos at. Unum recusabo est ei, ei vitae commune vivendum his.
+									</p></font>
+
+		</div>
+
+		<!--
+		<a href="file://///10.20.70.209/C:\ProgramData\Niagara4.3\vykon\stations\Transy_Super\shared/data.csv">data.csv</a>
+		  background-color: #26375a;
+		http://www.hyperlinkcode.com/button-links.php
+		https://stackoverflow.com/questions/41637226/how-to-read-and-display-data-from-a-csv-file-to-html-webpage
+		https://stackoverflow.com/questions/12711584/how-to-specify-a-local-file-within-html-using-the-file-scheme
+		https://stackoverflow.com/questions/101574/how-to-open-an-external-file-from-html
+		https://css-tricks.com/perfect-full-page-background-image/
+		-->
+
+		<footer>
+			Funded by <a href="http://www.transy.edu/" target="_blank">Transylvania University</a>
+		</footer>
+    </div>
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Jquery -->
+    <script src="functions.js" type="text/javascript"></script> <!--My Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootsrap javascript-->
+</body>
+</html>
