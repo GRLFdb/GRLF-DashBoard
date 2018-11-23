@@ -29,8 +29,8 @@ Time between page transitions
   https://stackoverflow.com/questions/18933196/how-can-i-switch-web-pages-of-the-website-automatically-which-i-have-created
 
   Whos Working on it: Patrick McCarthy
-  Version:
-  Bugs: N/A
+  Version: 1.0 - got it working w/in the 'Past Winners' page
+  Bugs: Only returns to previous page - simply need to find the command that will take it to the index.html. Waiting on clearer overall github to determine file name
 
 
 [NEEDS WORK]
