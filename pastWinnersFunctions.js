@@ -33,7 +33,7 @@ setup();
 // starts the timer
 function startTimer() {
     // wait 2 seconds before calling goInactive()
-    timeoutID = window.setTimeout(goInactive, 30000);
+    timeoutID = window.setTimeout(goBack, 10000);
 }
 
 
@@ -48,14 +48,14 @@ function resetTimer(e) {
 
 // sets up a function to go back to previous page
 function goBack() {
-  window.history.back();
+  window.location.href = "index.html";
 }
 
 // returns to homepage after set length of inactivity by calling goBack() function; will need to change in order to specify homepage
-function goInactive() {
+/*function goInactive() {
   goBack();
 
-}
+}*/
 
 // resets timer after going active again
 function goActive() {
