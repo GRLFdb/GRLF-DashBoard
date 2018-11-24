@@ -43,11 +43,6 @@ h3 {
   display: inline-block;
 }
 
-.menuButton {
-  display: inline;
-  transition: 0.3s;
-}
-
 img {
   max-width: 100%;
   max-height: 100%;
@@ -162,10 +157,17 @@ img {
 /* Style "menu" button */
 .menuButton {
   font-size: 30px;
-  margin-left: 10px;
   color: #cff;
   cursor: pointer;
   width: 30px;
+  display: inline-block;
+  transition: 0.3s;
+  margin: 10px;
+  float: left;
+}
+
+.menuButton:hover {
+  color: black;
 }
 
 .graphButton:link {

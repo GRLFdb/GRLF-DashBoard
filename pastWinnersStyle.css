@@ -95,7 +95,7 @@ body * { /* global changes */
 /* Style "menu" button */
 .menuButton {
   font-size: 30px;
-  margin-left: 10px;
+  margin: 10px;
   color: #cff;
   cursor: pointer;
   width: 30px;
