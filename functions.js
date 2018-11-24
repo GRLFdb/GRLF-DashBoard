@@ -233,6 +233,24 @@ function changeData(chart, label, data, pointNum) {
   chart.update();
 };
 
+// hopefully keeps the button that is being used as the one that is highlighted
+// Get the container element
+var btnContainer = document.getElementById("headingButton");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("graphButton");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+
 //changes visible data to basset data
 function dataToBasset() {
   //Change label and title. Pick one ot use for demo

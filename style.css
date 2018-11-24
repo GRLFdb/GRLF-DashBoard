@@ -175,16 +175,13 @@ img {
 .graphButton:visited {
 }
 
-.graphButton:hover {
+.active, .graphButton:hover {
   color: black;
   text-decoration: none;
-  background-color: #cff;
+  background-color: white;
 }
 
-.graphButton:active{
-  color: blue;
-  text-decoration: none;
-}
+
 
 .graphButton {
   border: solid;
@@ -193,7 +190,8 @@ img {
   transition: 0.3s;
 }
 
-.headingButton {
+/* made this an id so it would work easier with the button appearance change fn */
+#headingButton {
   padding: 10px;
 }
 
