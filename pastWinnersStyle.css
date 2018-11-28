@@ -120,6 +120,7 @@ tr:hover {
 .previousWinnersTable {
   padding: 5px;
   margin: 10px;
+  border-radius: 6px;
   background-color: #26375a;
   text-align: left;
 }
@@ -127,7 +128,7 @@ tr:hover {
 .totalWinsTable{
   padding: 5px;
   margin-bottom: 425px;
-  border-radius: 20px;
+  border-radius: 6px;
   background-color: #26375a;
   text-align: center;
 }
@@ -165,21 +166,12 @@ thead th { /* affects the rows in the header */
   background-color: rgba(0, 0, 0, 0);
 }
 
-
-
-
-
-
-
 tr { /* affects the rows in the body */
   background: #f4f7f8;
   margin-bottom: 5px;
   background-color: rgba(0, 0, 0, 0);
   height: 59px;
   border-bottom: 1px solid #dddddd; /* aware that this looks corny, just put it in as a reminder that it can be changed */
-  border-top: 1px solid #dddddd;
-  border-right:1px solid #dddddd;
-  border-left: 1px solid #dddddd;
   border-collapse: collapse;
 
 }
