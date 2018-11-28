@@ -22,10 +22,6 @@ body * { /* global changes */
   border: none;
 }
 
-#mainBody {
-  height: 1018px;
-}
-
 .main-page {
   background-image: linear-gradient(90deg, #141E30, #1f3247);
   width: 100%;       /* all this stuff and below \/ for .main-page gets the background to fill entire screen on 100% zoom */
@@ -112,10 +108,6 @@ body * { /* global changes */
 
 tr:hover {
   background-color: #354d7e;
-}
-
-.tableHeading:hover {
-  background-color: inherit;
 }
 
 .previousWinnersTable {

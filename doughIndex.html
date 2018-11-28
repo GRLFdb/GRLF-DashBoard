@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Charts in detail</title>
+  <!-- from chart.js cdn; chose the bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  <!--Load own style sheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Free Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div onmousemove="canceltimer()" onclick="canceltimer()"> </div>
+  <div id="mainBody" class="main-page">
+
+    <!--Side menu-->
+    <div id="mySideMenu" class="sideMenu">
+      <span class="menuTitle">Menu</span> <!-- Menu Title -->
+      <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
+
+	  <a href="index.html">Home</a>
+      <a href=".\pastwinnersindex.html" onclick="dataToBasset()">Past Winners</a>
+    </div>
+
+    <!--Menu Button-->
+    <div id="headingBar" class="heading-bar">
+      <div class="menuButton">
+        <span onclick="openMenu()">&#9776</span>
+      </div>
+      <div class="heading">
+        <h1>GRLF Dashboard</h1>
+      </div>
+    </div>
+
+    <!--top half of the page-->
+    <div id="top-half">
+
+      <!--doughnut graph for Basset-->
+      <div id="top-left">
+        <canvas id="doughnutCanvas_B" class="doughChart"></canvas>
+      </div>
+
+	  <!--doughnut graph for Pioneer-->
+      <div id="top-center">
+        <canvas id="doughnutCanvas_P" class="doughChart"></canvas>
+      </div>
+
+	  <!--doughnut graph for D-V-->
+      <div id="top-right">
+        <canvas id="doughnutCanvas_DV" class="doughChart"></canvas>
+      </div>
+
+	  <footer>
+        Funded by <a href="http://www.transy.edu/" target="_blank">Transylvania University</a>
+      </footer>
+	
+<!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Jquery -->
+    <script src="doughFunctions.js" type="text/javascript"></script> <!--My Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootsrap javascript-->
+  </body>
+  </html>
