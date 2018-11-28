@@ -8,6 +8,24 @@ function closeMenu() {
   document.getElementById("mySideMenu").style.width = "0";
 }
 
+function openPioneer(month) {
+  document.getElementById("pioneerSlideID").style.width = "1920px";
+  document.getElementById("pioHeading").innerHTML = "Pioneer: " + month;
+}
+
+function closePioneer() {
+  document.getElementById("pioneerSlideID").style.width = "0";
+}
+
+function openBasset(month) {
+  document.getElementById("bassetSlideID").style.width = "1920px";
+  document.getElementById("basHeading").innerHTML = "Basset: " + month;
+}
+
+function closeBasset() {
+  document.getElementById("bassetSlideID").style.width = "0";
+}
+
 
 //////////
 // Function to return to home page after inactivity
