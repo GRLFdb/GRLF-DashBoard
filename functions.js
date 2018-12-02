@@ -61,6 +61,7 @@ let pioneerData = [1.99, 5.55, 2.15, 3.92, 8.14, 8.85, 3.25, 4.18, 3.18, 6.66, 7
 
 /* build line chart */
 let lineChart = new Chart(myChart, {
+
   type:'line', // declares it a line chart
   data:{
     labels:['Oct. 1', 'Oct. 4', 'Oct. 7', 'Oct. 10', 'Oct. 13', 'Oct. 16', 'Oct. 19', 'Oct. 22', 'Oct. 25',
@@ -224,14 +225,7 @@ var myDoughnutChart = new Chart(myDoughnut, {
   }
 });
 
-/* function below changes specific data point */
-function changeData(chart, label, data, pointNum) {
-  chart.data.labels[pointNum] = label;
-  chart.data.datasets.forEach((dataset) => {
-    dataset.data[pointNum] = data;
-  });
-  chart.update();
-};
+
 
 // hopefully keeps the button that is being used as the one that is highlighted
 // Get the container element
@@ -251,22 +245,88 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
+//'Oct. 1', 'Oct. 4', 'Oct. 7', 'Oct. 10', 'Oct. 13', 'Oct. 16', 'Oct. 19', 'Oct. 22', 'Oct. 25',
+//'Oct. 28', 'Oct. 31'
+
+// gets the current month
+n =  new Date();
+month = n.getMonth() + 1; // " + 1" included because January == 0
+
+
+
+// calls changeDate fn with linechart and current month
+changeDate(lineChart, month);
+
+// changes the date labels on the line chart to the actual dates
+function changeDate (chart, m){
+  // goes through and checks which month it is and places the proper dates
+  if (m == 1){
+    chart.data.labels = ['Jan. 1', 'Jan. 4', 'Jan. 7', 'Jan. 10', 'Jan. 13',
+    'Jan. 16', 'Jan. 19', 'Jan. 22', 'Jan. 25', 'Jan. 28', 'Jan. 31'];
+  }else if (m == 2){ // have to figure out which dates we want to use for Feb. - I'm aware that there are only 28 days in Feb
+    chart.data.labels = ['Feb. 1', 'Feb. 4', 'Feb. 7', 'Feb. 10', 'Feb. 13',
+    'Feb. 16', 'Feb. 19', 'Feb. 22', 'Feb. 25', 'Feb. 28', 'Feb. 30'];
+  }else if (m == 3){
+    chart.data.labels = ['Mar. 1', 'Mar. 4', 'Mar. 7', 'Mar. 10', 'Mar. 13',
+    'Mar. 16', 'Mar. 19', 'Mar. 22', 'Mar. 25', 'Mar. 28', 'Mar. 31'];
+  }else if (m == 4){
+    chart.data.labels = ['Apr. 1', 'Apr. 4', 'Apr. 7', 'Apr. 10', 'Apr. 13',
+    'Apr. 16', 'Apr. 19', 'Apr. 22', 'Apr. 25', 'Apr. 28', 'Apr. 30'];
+  }else if (m == 5){
+    chart.data.labels = ['May. 1', 'May. 4', 'May. 7', 'May. 10', 'May. 13',
+    'May. 16', 'May. 19', 'May. 22', 'May. 25', 'May. 28', 'May. 31'];
+  }else if (m == 6){
+    chart.data.labels = ['June. 1', 'June. 4', 'June. 7', 'June. 10', 'June. 13',
+    'June. 16', 'June. 19', 'June. 22', 'June. 25', 'June. 28', 'June. 30'];
+  }else if (m == 7){
+    chart.data.labels = ['July. 1', 'July. 4', 'July. 7', 'July. 10', 'July. 13',
+    'July. 16', 'July. 19', 'July. 22', 'July. 25', 'July. 28', 'July. 31'];
+  }else if (m == 8){
+    chart.data.labels = ['Aug. 1', 'Aug. 4', 'Aug. 7', 'Aug. 10', 'Aug. 13',
+    'Aug. 16', 'Aug. 19', 'Aug. 22', 'Aug. 25', 'Aug. 28', 'Aug. 31'];
+  }else if (m == 9){
+    chart.data.labels = ['Sep. 1', 'Sep. 4', 'Sep. 7', 'Sep. 10', 'Sep. 13',
+    'Sep. 16', 'Sep. 19', 'Sep. 22', 'Sep. 25', 'Sep. 28', 'Sep. 30'];
+  }else if (m == 10){
+    chart.data.labels = ['Oct. 1', 'Oct. 4', 'Oct. 7', 'Oct. 10', 'Oct. 13',
+    'Oct. 16', 'Oct. 19', 'Oct. 22', 'Oct. 25', 'Oct. 28', 'Oct. 31'];
+  }else if (m == 11){
+    chart.data.labels = ['Nov. 1', 'Nov. 4', 'Nov. 7', 'Nov. 10', 'Nov. 13',
+    'Nov. 16', 'Nov. 19', 'Nov. 22', 'Nov. 25', 'Nov. 28', 'Nov. 30'];
+  }else if (m == 12){
+    chart.data.labels = ['Dec. 1', 'Dec. 4', 'Dec. 7', 'Dec. 10', 'Dec. 13',
+    'Dec. 16', 'Dec. 19', 'Dec. 22', 'Dec. 25', 'Dec. 28', 'Dec. 31'];
+  }
+}
+
+
+/* function below changes specific data point */
+function changeData(chart, data, pointNum) {
+
+  chart.data.datasets.forEach((dataset) => {
+    dataset.data[pointNum] = data;
+  });
+  chart.update();
+};
+
 //changes visible data to basset data
 function dataToBasset() {
+
   //Change label and title. Pick one ot use for demo
   lineChart.data.datasets[0].label = 'Basset';
   lineChart.options.title.text = 'Basset';
   for(i=0; i<bassetData.length; i++) {
-    changeData(lineChart, "day " + i.toString(), bassetData[i], i)
+    changeData(lineChart, bassetData[i], i)
   }
 }
 
 //changes visible data to pioneer data
 function dataToPioneer() {
+
   lineChart.data.datasets[0].label = 'Pioneer';
   lineChart.options.title.text = 'Pioneer';
   for(i=0; i<pioneerData.length; i++) {
-    changeData(lineChart, "day " + i.toString(), pioneerData[i], i)
+    changeData(lineChart, pioneerData[i], i)
   }
 }
 
