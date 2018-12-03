@@ -245,8 +245,7 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-//'Oct. 1', 'Oct. 4', 'Oct. 7', 'Oct. 10', 'Oct. 13', 'Oct. 16', 'Oct. 19', 'Oct. 22', 'Oct. 25',
-//'Oct. 28', 'Oct. 31'
+
 
 // gets the current month
 n =  new Date();
@@ -263,9 +262,9 @@ function changeDate (chart, m){
   if (m == 1){
     chart.data.labels = ['Jan. 1', 'Jan. 4', 'Jan. 7', 'Jan. 10', 'Jan. 13',
     'Jan. 16', 'Jan. 19', 'Jan. 22', 'Jan. 25', 'Jan. 28', 'Jan. 31'];
-  }else if (m == 2){ // have to figure out which dates we want to use for Feb. - I'm aware that there are only 28 days in Feb
-    chart.data.labels = ['Feb. 1', 'Feb. 4', 'Feb. 7', 'Feb. 10', 'Feb. 13',
-    'Feb. 16', 'Feb. 19', 'Feb. 22', 'Feb. 25', 'Feb. 28', 'Feb. 30'];
+  }else if (m == 2){ 
+    chart.data.labels = ['Feb. 1', 'Feb. 3', 'Feb. 7', 'Feb. 10', 'Feb. 13',
+    'Feb. 15', 'Feb. 19', 'Feb. 22', 'Feb. 24', 'Feb. 26', 'Feb. 28'];
   }else if (m == 3){
     chart.data.labels = ['Mar. 1', 'Mar. 4', 'Mar. 7', 'Mar. 10', 'Mar. 13',
     'Mar. 16', 'Mar. 19', 'Mar. 22', 'Mar. 25', 'Mar. 28', 'Mar. 31'];
