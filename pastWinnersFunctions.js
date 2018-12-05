@@ -182,7 +182,7 @@ function openBasset(month) {
       'Day 10', 'Day 11'], // chose 10 3 day interval dates for demo; added Oct. 1 for starting point
 
       datasets:[
-        { 
+        {
           label:'Bassett',
           data:[
             1.99,
@@ -338,7 +338,7 @@ function resetTimer(e) {
     goActive();
 
 }
-
+//
 // sets up a function to go back to previous page
 function goBack() {
   window.location.href = "index.html";
