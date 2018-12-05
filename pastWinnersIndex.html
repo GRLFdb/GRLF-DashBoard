@@ -7,8 +7,6 @@
   <link rel="stylesheet" type="text/css" href="PastWinnersStyle.css">
   <!--Free Bootstrap stylesheet-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- from chart.js cdn; chose the bundle -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 </head>
 
 <body>
@@ -19,6 +17,7 @@
   <div id="mySideMenu" class="sideMenu">
     <span class="menuTitle">Menu</span> <!-- Menu Title -->
     <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
+    <!-- added by Patrick for my own sake since I don't understand github -->
     <a href="index.html">Home</a>
     <a href=".\pastWinnersIndex.html">Past Winners</a>
   </div>
@@ -27,19 +26,11 @@
   <div id="pioneerSlideID" class="sideMenu">
     <span id="pioHeading" class="menuTitle">Pioneer:</span>
     <a href="#" class="closebtn" onclick="closePioneer()">&times;</a> <!-- Close button, using times sign as X -->
-    <!-- Line graph canvas and container. graph is drawn in funtions.js -->
-    <div class="lineGraph">
-      <canvas id="pioneerChart" width=1920 height=540></canvas>
-    </div>
   </div>
 
   <div id="bassetSlideID" class="sideMenu">
     <span id="basHeading"class="menuTitle">Basset</span>
     <a href="#" class="closebtn" onclick="closeBasset()">&times;</a> <!-- Close button, using times sign as X -->
-    <!-- Line graph canvas and container. graph is drawn in funtions.js -->
-    <div class="lineGraph">
-      <canvas id="bassetChart" width=1920 height=540></canvas>
-    </div>
   </div>
 
   <!--Menu Button-->
