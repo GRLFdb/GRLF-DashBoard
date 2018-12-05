@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>More Comparisons</title>
+  <!--Load main style sheet for basic formatting-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Load specific style sheet for custom pieces-->
+  <link rel="stylesheet" type="text/css" href="moreComparisonsStyle.css">
+  <!--Free Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+  <div onmousemove="canceltimer()" onclick="canceltimer()"> </div>
+
+  <div id="mainBody" class="main-page">
+
+    <!--Side menu-->
+    <div id="mySideMenu" class="sideMenu">
+      <span class="menuTitle">Menu</span> <!-- Menu Title -->
+      <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
+      <a href="index.html">Home</a>
+      <a href=".\pastWinnersIndex.html">Past Winners</a>
+    </div>
+
+    <!--Menu Button-->
+    <div id="headingBar" class="heading-bar">
+      <div class="menuButton">
+        <span onclick="openMenu()">&#9776;</span>
+      </div>
+      <div class="heading">
+        <h1>More Comparisons</h1>
+      </div>
+    </div>
+
+    <div id="top-half">
+      <div id="top-right" class="comparisonTable">
+        <table>
+
+          <thead>
+            <tr class="tableHeading">
+              <th colspan="2">Comparisons</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Blue Whale</td>
+              <td class="whaleComaprison"></td> <!--Not sure why it isn't working-->
+            </tr>
+            <tr>
+              <td>Average Swimming Pool</td>
+              <td>20,000 gallons</td>
+            </tr>
+            <tr>
+              <td>Bath Tub</td>
+              <td>80 gallons</td>
+            </tr>
+            <tr>
+              <td>Water Bottle</td>
+              <td>0.132 gallons</td>
+            </tr>
+            <tr>
+              <td>Golden Retriever</td>
+              <td>7.8 gallons</td>
+            </tr>
+            <tr>
+              <td>Queen Size Waterbed</td>
+              <td>200 gallons</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <footer id="bottom-right">
+        Funded by <a href="http://www.transy.edu/" target="_blank">Transylvania University</a>
+      </footer>
+
+    </div>
+  </div>
+
+  <!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Jquery -->
+  <script src="functions.js" type="text/javascript"></script> <!--To use building data data-->
+  <script src="pastWinnersFunctions.js" type="text/javascript"></script> <!-- for the inactivity timeout function-->
+  <script src="moreCmparisonsFunctions.js" type="text/javascript"></script> <!--To get constants for the table and override the timer function-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootsrap javascript-->
+</body>
+</html>

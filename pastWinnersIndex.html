@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
+
+
+
+
 <body>
 
 <div onmousemove="canceltimer()" onclick="canceltimer()"> </div>
@@ -17,29 +21,17 @@
   <div id="mySideMenu" class="sideMenu">
     <span class="menuTitle">Menu</span> <!-- Menu Title -->
     <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
+
     <!-- added by Patrick for my own sake since I don't understand github -->
     <a href="index.html">Home</a>
-    <a href=".\pastWinnersIndex.html">Past Winners</a>
-  </div>
-
-  <!--Reusing side menu to display data on clicked table rows-->
-  <div id="pioneerSlideID" class="sideMenu">
-    <span id="pioHeading" class="menuTitle">Pioneer:</span>
-    <a href="#" class="closebtn" onclick="closePioneer()">&times;</a> <!-- Close button, using times sign as X -->
-  </div>
-
-  <div id="bassetSlideID" class="sideMenu">
-    <span id="basHeading"class="menuTitle">Basset</span>
-    <a href="#" class="closebtn" onclick="closeBasset()">&times;</a> <!-- Close button, using times sign as X -->
+    <a href=".\moreComparisonsIndex.html" >More Comparisons</a>
   </div>
 
   <!--Menu Button-->
   <div id="headingBar" class="heading-bar">
     <div class="menuButton">
-      <span onclick="openMenu()">&#9776</span>
-    </div>
-    <div class="heading">
-      <h1>Past Winners</h1>
+      <span onclick="openMenu()">&#9776;</span>
+
     </div>
   </div>
 
@@ -59,39 +51,39 @@
           </thead>
 
           <tbody class="tableBody"> <!-- added class so I could get rid of the border for the head -->
-            <tr onclick="openBasset('September')"> <!-- data in chart -->
+            <tr> <!-- data in chart -->
               <td>September</td>
               <td id="rightColumnPrevious">Bassett</td> <!-- adds styling options specific to right column, did this to make it text align left -->
             </tr>
-            <tr onclick="openBasset('October')">
+            <tr>
               <td>October</td>
               <td id="rightColumnPrevious">Bassett</td>
             </tr>
-            <tr onclick="openPioneer('November')">
+            <tr>
               <td>November</td>
-              <td id="rightColumnPrevious"><span>Pioneer</span></td>
+              <td id="rightColumnPrevious">Pioneer</td>
             </tr>
-            <tr onclick="openBasset('December')">
+            <tr>
               <td>December</td>
               <td id="rightColumnPrevious">Bassett</td>
             </tr>
-            <tr onclick="openPioneer('January')">
+            <tr>
               <td>January</td>
               <td id="rightColumnPrevious">Pioneer</td>
             </tr>
-            <tr onclick="openPioneer('February')">
+            <tr>
               <td>February</td>
               <td id="rightColumnPrevious">Pioneer</td>
             </tr>
-            <tr onclick="openPioneer('March')">
+            <tr>
               <td>March</td>
               <td id="rightColumnPrevious">Pioneer</td>
             </tr>
-            <tr onclick="openPioneer('April')">
+            <tr>
               <td>April</td>
               <td id="rightColumnPrevious">Pioneer</td>
             </tr>
-            <tr onclick="openBasset('May')">
+            <tr>
               <td>May</td>
               <td id="rightColumnPrevious">Bassett</td>
             </tr>
