@@ -95,7 +95,7 @@ let lineChart = new Chart(myChart, {
       fontSize:25,
     },
 
-    legend:{
+    legend:{ // legend for graph
       display: false,
       position:'top',  // can do top, bottom, left, right
       cursor: 'pointer',
@@ -177,7 +177,7 @@ var myDoughnutChart = new Chart(myDoughnut, {
   // The data for our dataset
   data: {
     //our labels
-    labels: ["Basset", "Pioneer", "Dalton Voigt"],
+    labels: ["Bassett", "Pioneer", "Dalton Voigt"],
     datasets: [
       //first (and only) dataset
       {
@@ -353,9 +353,9 @@ function changeData(chart, data, pointNum) {
 //changes visible data to basset data
 function dataToBasset() {
   currentData = 0;
-  //Change label and title. Pick one ot use for demo
-  lineChart.data.datasets[0].label = 'Basset';
-  lineChart.options.title.text = 'Basset';
+  //Change label and title. Pick one to use
+  lineChart.data.datasets[0].label = 'Bassett';
+  lineChart.options.title.text = 'Bassett';
   for(i=0; i<bassetData.length; i++) {
     changeData(lineChart, bassetData[i], i)
   }
