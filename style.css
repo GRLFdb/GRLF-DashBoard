@@ -1,6 +1,7 @@
 /*Global body styling */
 body * {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI"; /* font chosen according to Windows user interface
+  guidelines (WUIG) */
 }
 
 h3 {
@@ -37,11 +38,18 @@ h3 {
   display: inline-block;
 }
 
+/* added to affect "GRLF Dashboard", as trying to make it bold under the
+.heading class did not affect it */
+#title{
+  font-weight: bold;
+}
+
 .heading {
   color: #cff;
-  text-decoration: underline;
+  /* removed text dec underline in order to follow WUIG */
   display: inline-block;
 }
+
 
 img {
   max-width: 100%;
@@ -146,7 +154,7 @@ img {
 /* Change font of menu title */
 .menuTitle {
   padding: 8px 8px 8px 32px;
-  text-decoration: underline;;
+  /* text-decoration: underline */ /* commented out in order to follow WUIG */
   font-size: 25px;
   color: #cff;
   display: block;
@@ -227,10 +235,9 @@ thead th { /* affects the rows in the header */
   background: #88CCF1;
   color: rgb(128, 255, 191);
   font-size: 16px;
-  font-weight: 100;
-  text-decoration: underline;
+  font-weight: bold; /* removed underline and changed to bold to follow WUIG */
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */ /* commented out, as WUIG suggests never using all caps */
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -243,5 +250,5 @@ tr { /* affects the rows in the body */
 }
 
 tfoot *{
-  text-decoration: underline;
+  font-weight: bold; /* removed underline and added bold in order to follow WUIG */
 }
