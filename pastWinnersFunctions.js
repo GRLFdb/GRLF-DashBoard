@@ -344,7 +344,7 @@ function goBack() {
   window.location.href = "index.html";
 }
 
-// returns to homepage after set length of inactivity by calling goBack() function; will need to change in order to specify homepage
+// returns to homepage after set length of inactivity by calling goBack() function
 /*function goInactive() {
   goBack();
 

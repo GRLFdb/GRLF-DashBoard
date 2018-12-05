@@ -181,6 +181,7 @@ img {
   color: black;
   text-decoration: none;
   background-color: white;
+
 }
 
 
@@ -197,7 +198,7 @@ img {
   padding: 10px;
 }
 
-.lineGraph a{
+.lineGraph { /* got rid of the "a" which fixed the button bug */
   color: #cff;
 }
 

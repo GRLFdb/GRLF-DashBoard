@@ -234,8 +234,7 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-//'Oct. 1', 'Oct. 4', 'Oct. 7', 'Oct. 10', 'Oct. 13', 'Oct. 16', 'Oct. 19', 'Oct. 22', 'Oct. 25',
-//'Oct. 28', 'Oct. 31'
+
 
 // gets the current month
 n =  new Date();
