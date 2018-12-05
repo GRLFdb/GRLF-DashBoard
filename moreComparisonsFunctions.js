@@ -26,4 +26,4 @@ document.querySelector('.dogComparison').innerHTML = 7.8 + " gallons";
 document.querySelector('.waterbedComparison').innerHTML = 200 + " gallons";
 
 //example of id selection:
-document.getElementById('id').innerHTML = "Something";
+document.getElementById('whaleComparison').innerHTML = 36000 + " gallons";
