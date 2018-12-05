@@ -299,6 +299,18 @@ function changeDate (chart, m){
   }
 }
 
+//run dataStep every X second
+setInterval(dataStep, 10000);
+//step data by one day, replacing by new random number each time
+function dataStep() {
+  var newNum = 2 + Math.floor(Math.random()*14);
+  for (i=0; i<10; i++){
+  lineChart.data.datasets[0].data[i] = lineChart.data.datasets[0].data[i+1];
+}
+console.log("dataStepping");
+lineChart.data.datasets[0].data[10] = newNum;
+lineChart.update();
+}
 
 /* function below changes specific data point */
 function changeData(chart, data, pointNum) {
