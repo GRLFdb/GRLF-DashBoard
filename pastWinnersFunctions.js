@@ -160,7 +160,7 @@ function closePioneer() {
 
 function openBasset(month) {
   document.getElementById("bassetSlideID").style.width = "1920px";
-  document.getElementById("basHeading").innerHTML = "Basset: " + month;
+  document.getElementById("basHeading").innerHTML = "Bassett: " + month;
 
   /*Get line canvas for line graph*/
   let bassetChart = document.getElementById('bassetChart').getContext('2d');
