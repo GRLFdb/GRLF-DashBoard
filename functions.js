@@ -14,30 +14,19 @@ function closeMenu() {
 
 /*Image slideshow*/
 var slideIndex = 0;
-carousel();
+var image = document.getElementsByClassName("mySlides");
+var text = document.getElementsByClassName("imageText")[0];
+var newText1 = "hi1";
+var newText2 = "hi2";
 
-function carousel() {
-  var i;
-  var image = document.getElementsByClassName("mySlides");
-  var text = document.getElementsByClassName("imageText")[0];
-  changeImageText(slideIndex, text);
-  for (i = 0; i < image.length; i++) {
-    image[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > image.length) {slideIndex = 1}
-  image[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 7000); // Change image every 2 seconds
-}
-
-function changeImageText(index, text) {
+function changeImageText(index) {
   switch (index%2) {
     case 0:
-    text.innerHTML = '76877 gallons = 6 swimming pools'
+    text.innerHTML = newText1;
     break;
 
     case 1:
-    text.innerHTML = '76877 gallons = 1153155 bottles of water'
+    text.innerHTML = newText2;
     break;
 
     default:
@@ -300,10 +289,11 @@ function changeDate (chart, m){
 }
 
 //initialize data chart alteration data
-var bassetSum = 0;
-var pioneerSum = 0;
+let bassetSum = 0;
+let pioneerSum = 0;
+let globalSum = 0;
 dataToPioneer();
-updateDoughnut();
+dataStep();
 
 //run dataStep every X second
 var currentData = 0;
@@ -313,14 +303,14 @@ function dataStep() {
   for (i=0; i<bassetData.length-1; i++){
     bassetData[i] = bassetData[i+1];
   }
-  bassetData[bassetData.length] = 2 + Math.floor(Math.random()*14);
+  bassetData[bassetData.length-1] = 2 + (Math.round(Math.random()*1400)/100);
 
   for (i=0; i<pioneerData.length-1; i++){
     pioneerData[i] = pioneerData[i+1];
   }
-  pioneerData[pioneerData.length] = 2 + Math.floor(Math.random()*14);
-
+  pioneerData[pioneerData.length-1] = 2 + (Math.round(Math.random()*1400)/100);
   updateGraphs();
+  updateTexts();
 }
 
 //update all graphs, visable and otherwise
@@ -336,6 +326,8 @@ function updateGraphs() {
 
 //update doughnut graph by adding data values
 function updateDoughnut(){
+  bassetSum = 0;
+  pioneerSum = 0;
   for (i=0; i<bassetData.length; i++){
     bassetSum += bassetData[i];
   }
@@ -379,7 +371,20 @@ function dataToPioneer() {
   }
 }
 
-function updateLeaderboard() {
+function updateTexts() {
+  globalSum = bassetSum + pioneerSum;
+  for (i = 0; i < image.length; i++) {
+    image[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > image.length) {slideIndex = 1}
+  image[slideIndex-1].style.display = "block";
 
-  document.querySelector('.sumAbove').innerHTML = 19675+23656+33546 + " gallons";
+  newText1 = Math.floor(globalSum*1000) + " gallons = " + Math.floor(globalSum*8*1000) + " bottles of water!";
+  newText2 = Math.floor(globalSum*1000) + " gallons = " + Math.floor(globalSum*1000/18000) + " FULL swimming pools!";
+  changeImageText(slideIndex)
+
+  document.getElementById("pioneerGallons").innerHTML = Math.floor(pioneerSum*1000) + " gallons";
+  document.getElementById("bassetGallons").innerHTML = Math.floor(bassetSum*1000) + " gallons";
+  document.getElementById("total").innerHTML = Math.floor((globalSum)*1000) + " gallons";
 }
