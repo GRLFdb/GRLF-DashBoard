@@ -24,3 +24,6 @@ document.querySelector('.bathComparison').innerHTML = 80 + " gallons";
 document.querySelector('.waterBottleComparison').innerHTML = 0.132 + " gallons";
 document.querySelector('.dogComparison').innerHTML = 7.8 + " gallons";
 document.querySelector('.waterbedComparison').innerHTML = 200 + " gallons";
+
+//example of id selection:
+document.getElementById('id').innerHTML = "Something";
