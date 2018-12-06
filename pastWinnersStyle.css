@@ -26,6 +26,23 @@ body * { /* global changes */
   height: 1011px;
 }
 
+/* added to affect "Past Winners", as trying to make it bold under the
+.heading class did not affect it */
+#title {
+  font-weight: bold;
+}
+
+.lineGraph {
+  height: 651px;
+  padding: 0px 7px;
+  margin: 10px 10px 5px 10px;
+  border-radius: 20px;
+  background-color: #26375a;
+  text-align: center;
+  font-size: 50px;
+}
+
+
 .main-page {
   background-image: linear-gradient(90deg, #141E30, #1f3247);
   width: 100%;       /* all this stuff and below \/ for .main-page gets the background to fill entire screen on 100% zoom */
@@ -46,7 +63,8 @@ body * { /* global changes */
 
 .heading {
   color: #cff;
-  text-decoration: underline;
+  /* text-decoration: underline; */ /* removed to follow WUIG */
+  font-weight: bold;
   display: inline-block;
 }
 
@@ -94,7 +112,7 @@ body * { /* global changes */
 /* Change font of menu title */
 .menuTitle {
   padding: 8px 8px 8px 32px;
-  text-decoration: underline;;
+  /* text-decoration: underline; */ /* commented out in order to follow WUIG */
   font-size: 25px;
   color: #cff;
   display: block;
@@ -164,11 +182,11 @@ th, td { /* affects the individual rows in header and body */
 thead th { /* affects the rows in the header */
   background: #88CCF1;
   color: rgb(128, 255, 191);
-  font-size: 16px;
-  font-weight: 100;
-  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold; /* made bold and commented out underline to follow WUIG */
+  /* text-decoration: underline; */
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */ /* commented out to follow WUIG */
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
 }

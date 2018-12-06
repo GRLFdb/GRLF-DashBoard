@@ -20,6 +20,7 @@
       <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
       <a href=".\pastwinnersindex.html" onclick="dataToBasset()">Past Winners</a>
       <a href=".\moreComparisonsIndex.html" >More Comparisons</a>
+	  <a href=".\doughindex.html" onclick="dataToBasset()">Doughnut Charts</a>
     </div>
 
     <!--Menu Button-->
@@ -28,7 +29,7 @@
         <span onclick="openMenu()">&#9776;</span>
       </div>
       <div class="heading">
-        <h1>GRLF Dashboard</h1>
+        <h1 id="title">GRLF Dashboard</h1> <!-- added title id in order to make this bold w/out affecting buttons -->
       </div>
     </div>
 
@@ -36,41 +37,45 @@
     <div id="top-half">
 
       <!--doughnut graph-->
+	  <a href="doughIndex.html">
       <div id="top-left">
         <canvas id="doughnutCanvas" class="doughChart"></canvas>
       </div>
+	  </a>
 
       <!--Leaderboard table-->
-      <div id="top-center" class="leaderTable">
-        <table>
-          <thead>
-            <tr> <!-- head of chart -->
-              <th>Leaderboard</th>
-              <th>Water Used</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr> <!-- data in chart -->
-              <td>1. Dalton Voigt</td> <!-- puts image of crown next to leader -->
-              <td>19675 gallons</td>
-            </tr>
-            <tr>
-              <td>2. Bassett</td>
-              <td>23656 gallons</td>
-            </tr>
-            <tr> <!-- data in chart -->
-              <td>3. Pioneer</td> <!-- puts image of crown next to leader -->
-              <td>33546 gallons</td> <!-- centers the text -->
-            </tr>
-            <tfoot> <!-- tells the total gallons used by both dorms -->
-              <td>Total</td>
-              <td class="sumAbove"></td> <!--Will automatically sum above values -->
-            </tfoot>
-          </table>
-        </div>
+      <a href="pastWinnersIndex.html">
+        <div id="top-center" class="leaderTable">
+          <table>
+            <thead>
+              <tr> <!-- head of chart -->
+                <th>Leaderboard</th>
+                <th>Water Used</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <!-- data in chart -->
+                <td>Dalton Voigt</td> <!-- puts image of crown next to leader -->
+                <td>TBD gallons</td>
+              </tr>
+              <tr>
+                <td>Bassett</td>
+                <td id="bassetGallons">23656 gallons</td>
+              </tr>
+              <tr> <!-- data in chart -->
+                <td>Pioneer</td> <!-- puts image of crown next to leader -->
+                <td id="pioneerGallons">33546 gallons</td> <!-- centers the text -->
+              </tr>
+              <tfoot> <!-- tells the total gallons used by both dorms -->
+                <td>Total</td>
+                <td id="total">Total Goes Here</td> <!--Will automatically sum above values -->
+              </tfoot>
+            </table>
+          </div>
+        </a>
 
         <div id="top-right" class="imageSlides">
-          <div class="imageText">76877 gallons = X bottles</div>
+          <div class="imageText" id="imageNumbers">76877 gallons = X bottles</div>
           <img class="mySlides" src="./images/swimming-pool.jpg">
           <img class="mySlides" src="./images/waterBottles.jpeg">
         </div>
@@ -80,8 +85,8 @@
       <!-- Line graph canvas and container. graph is drawn in funtions.js -->
       <div class="lineGraph">
         <div id="headingButton">
-          <a href="#" class="graphButton active" onclick="dataToBasset()">Pioneer</a> <!-- Temporary basset button, switching data to basset data -->
-          <a href="#" class="graphButton" onclick="dataToPioneer()">Basset</a> <!-- Temporary pioneer button, switching data to basset data -->
+          <a href="#" class="graphButton active" onclick="dataToPioneer()">Pioneer</a> <!-- Temporary pioneer button, switching data to basset data -->
+          <a href="#" class="graphButton" onclick="dataToBasset()">Bassett</a> <!-- Temporary bassett button, switching data to basset data -->
         </div>
         <canvas id="myChart" width=1920 height=540></canvas>
       </div>
