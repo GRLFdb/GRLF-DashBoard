@@ -234,7 +234,7 @@ table { /* affects the entire table */
 thead th { /* affects the rows in the header */
   background: #88CCF1;
   color: rgb(128, 255, 191);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold; /* removed underline and changed to bold to follow WUIG */
   letter-spacing: 2px;
   /* text-transform: uppercase; */ /* commented out, as WUIG suggests never using all caps */
