@@ -182,7 +182,7 @@ th, td { /* affects the individual rows in header and body */
 thead th { /* affects the rows in the header */
   background: #88CCF1;
   color: rgb(128, 255, 191);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold; /* made bold and commented out underline to follow WUIG */
   /* text-decoration: underline; */
   letter-spacing: 2px;
