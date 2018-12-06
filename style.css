@@ -10,6 +10,13 @@ h3 {
 
 .main-page {
   background-image: linear-gradient(90deg, #141E30, #1f3247);
+  width: auto;       /* all this stuff and below \/ for .main-page gets the background to fill entire screen on 100% zoom */
+  height: auto;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
   transition: 0.5s;
 }
 

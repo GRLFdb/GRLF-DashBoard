@@ -59,19 +59,7 @@ let lineChart = new Chart(myChart, {
     datasets:[
       {
         label:'Pioneer',
-        data:[
-          1.00,
-          3.98,
-          4.32,
-          4.67,
-          5.70,
-          5.99,
-          6.54,
-          7.01,
-          7.85,
-          8.78,
-          12.20
-        ],
+        data: pioneerData,
         fill:false,
         borderColor:'rgb(0, 204, 204)', // sets color of this line to dark grey
         backgroundColor: 'rgba(102, 255, 255, 1)', // background color of fill lines
