@@ -1,0 +1,57 @@
+#mainBody {
+  height: 1018px;
+}
+
+#bottom-right {
+  text-align:right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.comparisonTable{
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #26375a;
+  text-align: center;
+}
+
+table { /* affects the entire table */
+  font-family: 'Segoe UI';
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+th, td { /* affects the individual rows in header and body */
+  font-size: 18px;
+  font-weight: 400;
+  color: #cff;
+  padding: 0px;
+  width: 33.3333%;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+thead th { /* affects the rows in the header */
+  background: #88CCF1;
+  color: rgb(128, 255, 191);
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+tr { /* affects the rows in the body */
+  background: #f4f7f8;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  height: 59px;
+  border-bottom: 1px solid #dddddd; /* aware that this looks corny, just put it in as a reminder that it can be changed */
+  border-top: 1px solid #dddddd;
+  border-right:1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-collapse: collapse;
+
+}
