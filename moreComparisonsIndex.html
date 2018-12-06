@@ -15,7 +15,7 @@
 <body>
 
   <div onmousemove="canceltimer()" onclick="canceltimer()"> </div>
-
+  <div onload="updateTable()"></div>
   <div id="mainBody" class="main-page">
 
     <!--Side menu-->
@@ -24,6 +24,7 @@
       <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> <!-- Close button, using times sign as X -->
       <a href="index.html">Home</a>
       <a href=".\pastWinnersIndex.html">Past Winners</a>
+	    <a href=".\doughindex.html">Doughnut Charts</a>
     </div>
 
     <!--Menu Button-->
@@ -49,27 +50,27 @@
           <tbody>
             <tr>
               <td>Blue Whale</td>
-              <td class="whaleComaprison"></td> <!--Not sure why it isn't working-->
+              <td id='whaleComaprison'>36,000 gallons</td> <!--Not sure why it isn't working-->
             </tr>
             <tr>
               <td>Average Swimming Pool</td>
-              <td>20,000 gallons</td>
+              <td id="poolComparison">20,000 gallons</td>
             </tr>
             <tr>
               <td>Bath Tub</td>
-              <td>80 gallons</td>
+              <td id="bathComparison">80 gallons</td>
             </tr>
             <tr>
               <td>Water Bottle</td>
-              <td>0.132 gallons</td>
+              <td id="waterBottleComparison">0.132 gallons</td>
             </tr>
             <tr>
               <td>Golden Retriever</td>
-              <td>7.8 gallons</td>
+              <td id="dogComparison">7.8 gallons</td>
             </tr>
             <tr>
               <td>Queen Size Waterbed</td>
-              <td>200 gallons</td>
+              <td id="waterbedComparison">200 gallons</td>
             </tr>
           </tbody>
 

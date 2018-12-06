@@ -16,14 +16,12 @@ function startTimer() {
 }
 
 
-
+function updateTable() {
 /*Constants to generate units in table*/
-document.querySelector('.whaleComparison').innerHTML = 36000 + " gallons";
-document.querySelector('.poolComparison').innerHTML = 20000 + " gallons";
-document.querySelector('.bathComparison').innerHTML = 80 + " gallons";
-document.querySelector('.waterBottleComparison').innerHTML = 0.132 + " gallons";
-document.querySelector('.dogComparison').innerHTML = 7.8 + " gallons";
-document.querySelector('.waterbedComparison').innerHTML = 200 + " gallons";
-
-//example of id selection:
-document.getElementById('whaleComparison').innerHTML = 36000 + " gallons";
+document.getElementById('whaleComparison').innerHTML = "36000 Gallons";
+document.getElementById("poolComparison").innerHTML = 20000 + " Gallons";
+document.getElementById("bathComparison").innerHTML = 80 + " Gallons";
+document.getElementById("waterBottleComparison").innerHTML = 0.132 + " Gallons";
+document.getElementById("dogComparison").innerHTML = 7.8 + " Gallons";
+document.getElementById("waterbedComparison").innerHTML = 200 + " Gallons";
+}
